@@ -1,0 +1,21 @@
+<div class="nav-overlay" id="nav-overlay">
+  <button class="nav-overlay-close" id="menu-close" aria-label="Close menu">CLOSE ✕</button>
+
+  <ul class="nav-list">
+    <li><a href="{{ '/' | relative_url }}"><span class="idx">00</span> Home</a></li>
+    <li><a href="{{ '/about/' | relative_url }}"><span class="idx">01</span> About</a></li>
+    <li><a href="{{ '/projects/' | relative_url }}"><span class="idx">02</span> Projects</a></li>
+    <li><a href="{{ '/training/' | relative_url }}"><span class="idx">03</span> Training</a></li>
+    <li><a href="{{ '/rcai-framework/' | relative_url }}"><span class="idx">04</span> RCAI Framework</a></li>
+    <li><a href="{{ '/media/' | relative_url }}"><span class="idx">05</span> Media</a></li>
+    <li><a href="{{ '/book/' | relative_url }}"><span class="idx">06</span> Book</a></li>
+    <li><a href="{{ '/blog/' | relative_url }}"><span class="idx">07</span> Blog</a></li>
+    <li><a href="{{ '/contact/' | relative_url }}"><span class="idx">08</span> Contact</a></li>
+  </ul>
+
+  <div class="nav-meta">
+    <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    {% if site.twitter_url and site.twitter_url != "" %}<a href="{{ site.twitter_url }}" target="_blank" rel="noopener">X / Twitter ↗</a>{% endif %}
+  </div>
+</div>

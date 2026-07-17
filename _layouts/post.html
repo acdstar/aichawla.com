@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<header class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Blog</span>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%B %-d, %Y" }}
+      {% if page.reading_time %} · {{ page.reading_time }} min read{% endif %}
+    </p>
+  </div>
+</header>
+
+<article class="content">
+  <div class="wrap">
+    {{ content }}
+
+    <p style="margin-top:56px;">
+      <a href="{{ '/blog/' | relative_url }}">← Back to all posts</a>
+    </p>
+  </div>
+</article>

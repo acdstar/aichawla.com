@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750">
+  <rect width="600" height="750" fill="#16213c"/>
+  <g stroke="rgba(248,250,252,0.08)" stroke-width="1">
+    <path d="M0 150 H600"/><path d="M0 300 H600"/><path d="M0 450 H600"/><path d="M0 600 H600"/>
+    <path d="M150 0 V750"/><path d="M300 0 V750"/><path d="M450 0 V750"/>
+  </g>
+  <circle cx="300" cy="290" r="90" fill="none" stroke="#f97316" stroke-width="4"/>
+  <path d="M170 560 c0-90 58-160 130-160s130 70 130 160" fill="none" stroke="#f97316" stroke-width="4"/>
+  <text x="300" y="700" text-anchor="middle" font-family="monospace" font-size="16" letter-spacing="3" fill="rgba(248,250,252,0.35)">REPLACE WITH YOUR PHOTO</text>
+</svg>

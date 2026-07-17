@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<section class="hero">
+  <img class="hero-bg" src="{{ page.hero_image | default: '/assets/images/hero.svg' | relative_url }}" alt="">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Industrial AI &amp; Reliability</span>
+    <h1>Bridging the gap between <em>AI</em> and industry</h1>
+    <p>{{ site.description }}</p>
+    <a href="#explore" class="btn">Explore the work ↓</a>
+  </div>
+</section>
+
+<section class="grid-section" id="explore">
+  <div class="bento">
+    {% for card in page.cards %}
+    <a class="card {{ card.span }}" href="{{ card.url | relative_url }}">
+      <img src="{{ card.image | relative_url }}" alt="">
+      <div class="card-tint"></div>
+      <div class="card-body">
+        <span class="card-tag">{{ card.tag }}</span>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+      <span class="card-arrow" aria-hidden="true">→</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{{ content }}

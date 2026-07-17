@@ -1,0 +1,44 @@
+title: AIChawla
+tagline: "Bridging the Gap Between AI and Industries"
+description: >-
+  Ankit Chawla helps manufacturing organizations harness Artificial
+  Intelligence, Reliability Engineering, and Digital Transformation
+  through practical, on-the-floor innovation.
+author: Ankit Chawla
+email: hello@aichawla.com          # TODO: replace with your real email
+url: "https://aichawla.com"
+baseurl: ""
+
+# --- Social / external links (edit these) ---
+linkedin_url: "https://www.linkedin.com/in/REPLACE-ME"
+twitter_url: ""                     # optional, leave blank to hide
+
+# --- Build settings ---
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

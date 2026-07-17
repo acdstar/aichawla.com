@@ -1,0 +1,21 @@
+---
+layout: page
+title: Blog
+eyebrow: "Notes from the floor"
+lede: "Writing on AI, reliability engineering, and digital transformation in industrial settings."
+permalink: /blog/
+---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    <span class="excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</span>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if site.posts.size == 0 %}
+<p style="color:var(--slate-400);">No posts yet — your first one is one Markdown file away. See the README for how to add it.</p>
+{% endif %}

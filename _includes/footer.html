@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <span class="mark" aria-hidden="true"></span>
+      {{ site.title }}
+    </a>
+
+    <ul class="footer-links">
+      <li><a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+      <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+    </ul>
+
+    <span class="footer-copy">© {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</span>
+  </div>
+</footer>
